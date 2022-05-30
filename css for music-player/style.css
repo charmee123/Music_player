@@ -1,0 +1,115 @@
+body{
+  background-color:#82DBD8;
+   transition: background-color .5s;
+
+}
+.heading{
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-size: 45px;
+
+}
+.player{
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.info{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+.track-art{
+  margin:25px;
+  width: 270px;
+  height: 250px;
+  background-image:url(https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bXVzaWMlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60);
+  background-size: cover;
+  background-position: center;
+  border-radius:10%
+}
+.playing-now{
+  font-size: 25px;
+  }
+.track-name{
+  font-size: 57px;
+}
+.artist{
+  font-size: 30px;
+}
+.playpause-track,
+.prev-track,
+.next-track{
+  padding: 25px;
+  opacity: 0.7;
+  transition: opacity .2s;
+  }
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover{
+  opacity: 1.0;
+}
+.slider_container{
+  display: flex;
+  width: 78%;
+  max-width: 400px;
+  justify-content: center;
+  align-items: center;
+}
+.seek_slider,
+.volume_slider{
+  height: 8px;
+  background: black;
+  opacity: 0.8;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.seek_slider:hover,
+.volume_slider:hover {
+  opacity: 1.0;
+}
+.seek_slider{
+  width: 65%;
+}
+.volume_slider{
+  width: 35%;
+}
+.current-time,
+.total-duration{
+  padding: 15px;
+}
+i.fa-volume-down,
+i.fa-volume-up {
+  padding: 15px;
+}
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+  cursor: pointer;
+}
